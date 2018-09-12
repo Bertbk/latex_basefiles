@@ -1,4 +1,4 @@
-# Base file for lualatex
+# Base file for lualatex and latex
 
 ## How to install?
 
