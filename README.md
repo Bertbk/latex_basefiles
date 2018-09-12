@@ -32,4 +32,7 @@ git commit -m "changed my file!"
 
 ## Gitignore
 
-[list of up-to-date gitignore files](https://github.com/github/gitignore)
+[list of up-to-date gitignore files](https://github.com/github/gitignore). Download [the tex .gitignore file](https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore):
+```bash
+curl -LO https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore .gitignore
+```
