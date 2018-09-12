@@ -2,37 +2,25 @@
 
 ## How to install?
 
-### Fork the project on GitHub
-
-**Do not forget to delete the fork relationship!**
-
-### Clone
-
-For new project named `project` :
+Suppose you want the `lualatex.tex` file:
 
 ```bash
-git clone git@github.com:Bertbk/latex_basefiles.git project
-cd project
-git remote remove origin
+curl -LO https://github.com/Bertbk/latex_basefiles/lualatex.tex
 ```
-If you want to set a remote repository again:
-
+Then rename it and add a [prepared tex .gitignore file](https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore):
 ```bash
-git remote add origin url_of_the_git_repo -u
+curl -LO https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore --output .gitignore
 ```
-
-## What next ?
-
-- Keep only the basefile you want (lualatex or latex)
-- Rename it to whatever you want
-```
-git mv basefile.tex myfile.tex
-git commit -m "changed my file!"
-```
-
-## Gitignore
-
-[list of up-to-date gitignore files](https://github.com/github/gitignore). Download [the tex .gitignore file](https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore):
+If you want to use git to control your work (which I recommend):
 ```bash
-curl -LO https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore .gitignore
+git init
 ```
+and eventually add a remote (github or whatever)
+```bash
+git add remote origin myremoterepo -u
+git push
+```
+
+## Forking the repo?
+
+Ok but then **do not forget to delete the fork relationship!**
