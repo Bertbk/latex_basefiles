@@ -11,7 +11,7 @@
 For new project named `project` :
 
 ```bash
-git clone git@github.com:Bertbk/lualatex_base.git project
+git clone git@github.com:Bertbk/latex_basefiles.git project
 cd project
 git remote remove origin
 ```
@@ -23,7 +23,8 @@ git remote add origin url_of_the_git_repo -u
 
 ## What next ?
 
-- Rename the base file to whatever you want
+- Keep only the basefile you want (lualatex or latex)
+- Rename it to whatever you want
 ```
 git mv basefile.tex myfile.tex
 git commit -m "changed my file!"

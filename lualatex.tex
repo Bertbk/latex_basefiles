@@ -1,0 +1,44 @@
+% Fichier pour LuaLaTeX
+%\RequirePackage{pkgloader} %package dependencies
+\documentclass{article}%           autres choix : report, book
+
+%ENCODER EN UTF 8 !
+%inputenc : obselete avec LuaLatex
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+
+\usepackage{textcomp}%             caractères additionnels
+\usepackage{amsmath,amssymb}%      pour les maths
+\usepackage{mathtools}%            Amélioration de amsmath
+%\usepackage{lmodern}%              remplacer éventuellement par txfonts, fourier, etc.
+\usepackage{fourier}%              Nombreux symboles, glyphs, mises en gras de caractères maths
+\usepackage[a4paper]{geometry}%    taille correcte du papier
+\usepackage{graphicx}%             pour inclure des images
+\usepackage{xcolor}%               pour gérer les couleurs
+\usepackage{microtype}%            améliorations typographiques
+\usepackage{mathrsfs}%             \mathscr
+
+\usepackage{caption}%    Personnalisation des légendes des flottants
+\usepackage{subcaption}% Sous figures / sous tableaux
+
+\usepackage{listings}%   listings informatique
+
+%%%%
+\usepackage{hyperref}%             gestion des hyperliens
+\hypersetup{pdfstartview=XYZ}%     zoom par défaut
+
+\usepackage{csquotes}
+\usepackage[backend=biber, firstinits=true]{biblatex}
+\SetCiteCommand{\autocite}
+\addbibresource{Biblio.bib}
+
+
+\usepackage{nag}% Détection de package/commande obsolète
+
+
+\begin{document}
+
+...
+
+\end{document}
